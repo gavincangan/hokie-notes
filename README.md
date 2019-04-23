@@ -7,7 +7,7 @@
 interact -q p100_normal_q -l procs=2,gpus=1 -l walltime=20:00:00
 ```
 
-### Huckleberry
+### Huckleberry / Cascades (slurm)
 ```bash
 salloc --exclusive -t 48:00:00 --mem-per-cpu=16G --gres=gpu:4
 salloc -n1 -t 48:00:00 --mem-per-cpu=16G --gres=gpu:4

@@ -1,10 +1,23 @@
 # Hokie Guide
 
+## Request interactive jobs
+
+### Newriver
+```bash
+interact -q p100_normal_q -l procs=2,gpus=1 -l walltime=20:00:00
+```
+
+### Huckleberry
+```bash
+salloc --exclusive -t 48:00:00 --mem-per-cpu=16G --gres=gpu:4
+salloc -n1 -t 48:00:00 --mem-per-cpu=16G --gres=gpu:4
+```
+
 ## ~/.bashrc
 
 ### To init different anaconda environments for different clusters
 - Install anaconda into a different folder for each cluster and modify the below script accordingly.
-```
+```bash
 # Huckleberry
 if  [[ $HOSTNAME == hu* ]]; then
     # >>> conda initialize >>>
@@ -101,7 +114,7 @@ fi
 ```
 ## Local tmux
 - Run this file to install tmux locally into $HOME/local/bin/tmux
-```
+```bash
 #!/bin/bash
 
 # Script for installing tmux on systems where you don't have root access.

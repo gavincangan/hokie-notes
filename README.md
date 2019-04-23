@@ -1,4 +1,6 @@
 # Hokie Guide
+
+## Add to .bashrc to init different anaconda environments for different clusters
 ```
 # Huckleberry
 if  [[ $HOSTNAME == hu* ]]; then

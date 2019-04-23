@@ -1,5 +1,4 @@
-# hokie-guide
-
+# Hokie Guide
 ```
 # Huckleberry
 if  [[ $HOSTNAME == hu* ]]; then

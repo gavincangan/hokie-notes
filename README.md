@@ -1,6 +1,9 @@
 # Hokie Guide
 
-## Add to .bashrc to init different anaconda environments for different clusters
+## ~/.bashrc
+
+### To init different anaconda environments for different clusters
+- Install anaconda into a different folder for each cluster and modify the below script accordingly.
 ```
 # Huckleberry
 if  [[ $HOSTNAME == hu* ]]; then

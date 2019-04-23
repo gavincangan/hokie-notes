@@ -99,7 +99,7 @@ elif  [[ $HOSTNAME == ca* ]]; then
     # <<< conda initialize <<<
 fi
 ```
-### Local tmux
+## Local tmux
 - Run this file to install tmux locally into $HOME/local/bin/tmux
 ```
 #!/bin/bash

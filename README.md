@@ -319,7 +319,7 @@ bind M-r source-file ~/.tmux.conf
 ## ~/.jupyter/jupyter_notebook_config.py
 ```bash
 ## The IP address the notebook server will listen on.
-c.NotebookApp.ip = '0.0.0.0' #'localhost'
+c.NotebookApp.ip = '0.0.0.0'
 
 c.NotebookApp.token = '<set-a-password-here>'
 ```

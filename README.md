@@ -251,3 +251,38 @@ rm -rf $HOME/tmux_tmp
 
 echo "$HOME/local/bin/tmux is now available. You can optionally add $HOME/local/bin to your PATH."
 ```
+## ~/.tmux.conf
+```bash
+set -g default-terminal "screen-256color"
+
+# Command history
+set-option -g history-limit 90000
+
+# Add C-a prefix
+set -g prefix C-a
+set -g prefix2 `
+
+# Open new pane or window on the current directory
+bind '"' split-window -c "#{pane_current_path}"
+bind % split-window -h -c "#{pane_current_path}"
+bind c new-window -c "#{pane_current_path}"
+
+# Lets me use use ctrl+arrow to move through words
+set-window-option -g xterm-keys on
+
+# Enable mouse mode (tmux version > 2.1)
+# set -g mouse on
+
+# switch panes using Alt-arrow without prefix
+bind -n M-Left select-pane -L
+bind -n M-Right select-pane -R
+bind -n M-Up select-pane -U
+bind -n M-Down select-pane -D
+
+# Shift arrow to switch windows
+bind -n S-Left  previous-window
+bind -n S-Right next-window
+
+# reload config
+bind M-r source-file ~/.tmux.conf
+```

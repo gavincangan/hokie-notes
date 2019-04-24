@@ -211,7 +211,16 @@ alias ..='cd ..'
 # Current weather on the terminal :)
 alias wthr="curl wttr.in/?0u"
 ```
+### List files / Upload to a Google Drive folder using gDrive
+```bash
+$DIRECTORY_URI=<DIRECTORY_URI_GOES_HERE>
 
+alias list_to_dir="gdrive list --query \"'$DIRECTORY_URI' in parents\""
+
+upload_to_dir() {
+        gdrive upload -p $DIRECTORY_URI $1
+}
+```
 ## Local tmux
 - Run this file to install tmux locally into $HOME/local/bin/tmux
 ```bash

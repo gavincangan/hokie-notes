@@ -13,6 +13,85 @@ salloc --exclusive -t 48:00:00 --mem-per-cpu=16G --gres=gpu:4
 salloc -n1 -t 48:00:00 --mem-per-cpu=16G --gres=gpu:4
 ```
 
+## ~/.ssh/config
+```bash
+# Default
+User bgavin
+PreferredAuthentications publickey
+
+# CasGPU
+Host casgpu
+HostName casgpu.bgav.in
+User bgavin
+#IdentityFile ~/.ssh/server
+#IdentitiesOnly yes
+PreferredAuthentications publickey
+
+Host filebox
+HostName filebox.ece.vt.edu
+
+Host nr1
+HostName newriver1.arc.vt.edu
+
+Host nr2
+HostName newriver2.arc.vt.edu
+
+Host nr3
+HostName newriver3.arc.vt.edu
+
+Host hu1
+HostName huckleberry1.arc.vt.edu
+
+Host hu2
+HostName huckleberry2.arc.vt.edu
+
+Host hu3
+HostName huckleberry3.arc.vt.edu
+
+Host ca1
+HostName cascades1.arc.vt.edu
+
+Host ca2
+HostName cascades2.arc.vt.edu
+
+Host ca3
+HostName cascades3.arc.vt.edu
+
+Host cascomp
+Port 2222
+HostName computing.caslab.ece.vt.edu
+
+Host cvl1
+HostName cvl01.ece.vt.edu
+
+Host cvl2
+HostName cvl02.ece.vt.edu
+
+Host cvl3
+HostName cvl03.ece.vt.edu
+
+Host cvl4
+HostName cvl04.ece.vt.edu
+
+Host cvl5
+HostName cvl05.ece.vt.edu
+
+Host cvl6
+HostName cvl06.ece.vt.edu
+
+Host cvl7
+HostName cvl07.ece.vt.edu
+
+Host cvl8
+HostName cvl08.ece.vt.edu
+
+Host cvl9
+HostName cvl09.ece.vt.edu
+
+Host cvl10
+HostName cvl10.ece.vt.edu
+```
+
 ## ~/.bashrc
 
 ### To init different anaconda environments for different clusters

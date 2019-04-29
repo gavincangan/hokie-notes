@@ -128,6 +128,9 @@ if  [[ $HOSTNAME == hu* ]]; then
     unset __conda_setup
     # <<< conda initialize <<<
 
+    # Use local tmux built for Power8 arch
+    alias tmuxl='$HOME/local/bin/tmux_hu'
+
 # NewRiver
 elif  [[ $HOSTNAME == nr* ]]; then
     # >>> conda initialize >>>
@@ -159,6 +162,9 @@ elif  [[ $HOSTNAME == nr* ]]; then
     unset __conda_setup
     # <<< conda initialize <<<
 
+    # Use local tmux built for x86 arch
+    alias tmuxl='$HOME/local/bin/tmux_nr'
+
 # Cascades
 elif  [[ $HOSTNAME == ca* ]]; then
     # >>> conda initialize >>>
@@ -189,6 +195,10 @@ elif  [[ $HOSTNAME == ca* ]]; then
     fi
     unset __conda_setup
     # <<< conda initialize <<<
+    
+    # Use local tmux built for x86 arch
+    alias tmuxl='$HOME/local/bin/tmux_nr'
+    
 fi
 ```
 ### Keyboard aliases
@@ -223,6 +233,7 @@ upload_to_dir() {
 ```
 ## Local tmux
 - Run this file to install tmux locally into $HOME/local/bin/tmux
+- I had to run this twice, once on Huckleberry _(Power8)_ and once on NewRiver or Cascades. I just renamed them and created aliases _(see ~/.bashrc above)_
 ```bash
 #!/bin/bash
 

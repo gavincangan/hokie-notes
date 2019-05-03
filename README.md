@@ -299,7 +299,7 @@ set -g default-terminal "screen-256color"
 # Command history
 set-option -g history-limit 90000
 
-# Add C-a prefix
+#Add C-a prefix
 set -g prefix C-a
 set -g prefix2 `
 
@@ -315,10 +315,16 @@ set-window-option -g xterm-keys on
 # set -g mouse on
 
 # switch panes using Alt-arrow without prefix
-bind -n M-Left select-pane -L
-bind -n M-Right select-pane -R
-bind -n M-Up select-pane -U
-bind -n M-Down select-pane -D
+bind -n M-h select-pane -L
+bind -n M-l select-pane -R
+bind -n M-k select-pane -U
+bind -n M-j select-pane -D
+
+# Resize the current pane using Alt + direction
+bind -n C-M-k resize-pane -U 2
+bind -n C-M-j resize-pane -D 2
+bind -n C-M-h resize-pane -L 2
+bind -n C-M-l resize-pane -R 2
 
 # Shift arrow to switch windows
 bind -n S-Left  previous-window

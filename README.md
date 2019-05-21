@@ -17,7 +17,7 @@ salloc -n1 -t 48:00:00 --mem-per-cpu=16G --gres=gpu:4
 ```bash
 # Default
 User bgavin
-PreferredAuthentications publickey
+PreferredAuthentications publickey,password
 
 # CasGPU
 Host casgpu
@@ -25,7 +25,7 @@ HostName casgpu.bgav.in
 User bgavin
 #IdentityFile ~/.ssh/server
 #IdentitiesOnly yes
-PreferredAuthentications publickey
+PreferredAuthentications publickey,password
 
 Host mjolnir
 HostName mjolnir.bgav.in

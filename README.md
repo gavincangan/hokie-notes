@@ -27,6 +27,9 @@ User bgavin
 #IdentitiesOnly yes
 PreferredAuthentications publickey
 
+Host mjolnir
+HostName mjolnir.bgav.in
+
 Host filebox
 HostName filebox.ece.vt.edu
 

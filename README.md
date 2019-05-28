@@ -228,7 +228,7 @@ alias wthr="curl wttr.in/?0u"
 ```bash
 $DIRECTORY_URI=<DIRECTORY_URI_GOES_HERE>
 
-alias list_to_dir="gdrive list --query \"'$DIRECTORY_URI' in parents\""
+alias list_dir="gdrive list --query \"'$DIRECTORY_URI' in parents\""
 
 upload_to_dir() {
         gdrive upload -p $DIRECTORY_URI $1

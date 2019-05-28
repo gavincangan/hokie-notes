@@ -311,7 +311,7 @@ bind '"' split-window -c "#{pane_current_path}"
 bind % split-window -h -c "#{pane_current_path}"
 bind c new-window -c "#{pane_current_path}"
 
-# Lets me use use ctrl+arrow to move through words
+# Lets me use use ctrl+arrow to skip words
 set-window-option -g xterm-keys on
 
 # Enable mouse mode (tmux version > 2.1)

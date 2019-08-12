@@ -15,3 +15,6 @@ alias ..='cd ..'
 
 # Current weather on the terminal :)
 alias wthr="curl wttr.in/?0u"
+
+# Local tmux setup
+alias tmuxl="/root/local/bin/tmux"

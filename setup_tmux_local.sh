@@ -54,3 +54,11 @@ cd ..
 rm -rf $HOME/tmux_tmp
 
 echo "$HOME/local/bin/tmux is now available. You can optionally add $HOME/local/bin to your PATH."
+
+pushd .
+
+cd $HOME
+wget -c https://raw.githubusercontent.com/gavincangan/hokie-notes/master/.bash_aliases
+wget -c https://raw.githubusercontent.com/gavincangan/hokie-notes/master/.tmux.conf
+
+popd

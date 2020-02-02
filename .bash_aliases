@@ -18,3 +18,8 @@ alias wthr="curl wttr.in/?0u"
 
 # Local tmux setup
 alias tmuxl="$HOME/local/bin/tmux"
+
+# Git aliases
+alias gcg='git commit --author="Barnabas Gavin Cangan <bgavin@vt.edu>" -m'
+alias gag='git commit --amend --author="Barnabas Gavin Cangan <bgavin@vt.edu>"'
+alias git_config_gavin='git config user.email "bgavin@vt.edu"; git config user.name "Barnabas Gavin Cangan"'

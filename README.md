@@ -315,7 +315,7 @@ bind c new-window -c "#{pane_current_path}"
 set-window-option -g xterm-keys on
 
 # Enable mouse mode (tmux version > 2.1)
-# set -g mouse on
+set -g mouse on
 
 # switch panes using Alt-arrow without prefix
 bind -n M-h select-pane -L

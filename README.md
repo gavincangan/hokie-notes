@@ -304,7 +304,7 @@ set-option -g history-limit 90000
 
 #Add C-a prefix
 set -g prefix C-a
-set -g prefix2 `
+set -g prefix2 C-z
 
 # Open new pane or window on the current directory
 bind '"' split-window -c "#{pane_current_path}"

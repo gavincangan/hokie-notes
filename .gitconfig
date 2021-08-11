@@ -1,0 +1,17 @@
+[user]
+	name = Barnabas Gavin Cangan
+	email = bgavin@vt.edu
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	hooksPath = /dev/null
+[alias]
+  undo = reset --soft HEAD^
+  redo = commit -C ORIG_HEAD
+  unstage = reset HEAD
+  newpush = push -u
+  fix = commit --amend --no-edit
+  cdiff = diff --cached
